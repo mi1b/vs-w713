@@ -19,8 +19,8 @@ RUN git clone https://github.com/vault713/wallet713  \
     && cargo build --release
 
 LABEL vendor="vault713" \
-    mw.713.version="1.0.0" \
-    mw.713.release-date="15.01.2019" \
+    mw.713.version="1.0.1" \
+    mw.713.release-date="02.02.2019" \
     maintainer="mi1b@protonmail.com"
 
 FROM debian:9
