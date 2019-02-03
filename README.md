@@ -35,11 +35,9 @@ Download vs-w713 GitHub repository:
 
 * PowerShell defaults to TLS 1.0 (cryptographically weak) - GitHub requires TLS 1.2:
   * `[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12 `
-
-
+  
 * Pull repository:
   * `Invoke-WebRequest -Uri "https://github.com/mi1b/vs-w713/archive/master.zip" -OutFile "\vs-w713.zip"`
-
 
 * Extract repository:
   * `Expand-Archive -LiteralPath \vs-w713.zip -DestinationPath \`
@@ -54,11 +52,9 @@ Download vs-w713 GitHub repository:
 
 * As Docker needs to mount files, it requires access to the Windows filesystem. Docker will ask for credentials; use your normal Windows password.
 
-
 * Check you're connected to Docker:
   * `docker version`
-
-
+  
 * Check Docker can pull and run images:
   * `docker run hello-world`
 
@@ -66,8 +62,7 @@ Download vs-w713 GitHub repository:
 
 * Navigate to work directory:
   * `cd \vs-w713-master\vs-w713`
-
-
+  
  * Build container images from Dockerfile context:
    * `docker build -t my/wallet713 .`
 
@@ -77,34 +72,26 @@ Download vs-w713 GitHub repository:
 
  * Run the container and open Wallet713:
    * `docker run --rm --name wallet713 -ti -v $PWD/data:/root/.wallet713 my/wallet713 wallet713`
-
-
+   
 * Make a new wallet:
  * `init`
 
- 
 * Write down your recovery phrase and stash it somewhere safe.
-
 
 * Lists available Wallet713 commands:
   * `-h`
-
-
+  
  * Close Wallet713 and the container:
    * `exit`
-  
-
+   
 * If anything weird happens (not saying it will) you can remove the container:
   * `docker rm -f wallet713`
-
-
+  
 * To start Wallet713 again, just run the container:
   * `docker run --rm --name wallet713 -ti -v $PWD/data:/root/.wallet713 my/wallet713 wallet713`
-
-
+  
 > *Whatever happens to the container doesn't matter. You can delete the container, all the images, and uninstall Docker. Your Wallet713 data remains in the **\vs-w713-master\vs-w713\data** folder. Grin is always safe, or as safe as it can be on the Windows filesystem.*
 
-  
 
 ## Things You Should Know
 Types of data Microsoft gleans via Windows 10:
