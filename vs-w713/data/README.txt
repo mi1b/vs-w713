@@ -9,7 +9,7 @@
 * Starting the container with an empty data folder will create a new wallet.              *
 *                                                                                         *
 * Take your wallet out of cold storage by moving it back to the empty data folder         *
-* (folder structure must be maintained)                                                   *
+* (folder structure must be maintained).                                                  *
 *                                                                                         *
 *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
 
