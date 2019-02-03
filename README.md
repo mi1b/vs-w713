@@ -26,7 +26,7 @@ Run Windows PowerShell as Administrator.
 In the following sections; text in `command boxes` should be  pasted into PowerShell (Admin). Right click to paste clipboard, hit Enter.
 
 * Enable Hyper-V, then reboot:
- * `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All`
+  * `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All`
 
 >*[VirtualBox](https://www.virtualbox.org/) won't work with Hyper-V enabled. You can toggle Hyper-V, using [Hyper-V Switch](https://unclassified.software/en/apps/hypervswitch) by Yves Goergen.*
 
