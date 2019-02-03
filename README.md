@@ -1,6 +1,8 @@
 
 [![Join the chat at https://gitter.im/vault713/wallet713](https://badges.gitter.im/vault713/wallet713.svg)](https://gitter.im/vault713/wallet713?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
+[![Discord logo](https://ipfs.io/ipfs/Qme2sRPgQBjKuZ57vAP1uepfuKjdBsSUpjXwrR8LNVhzm5)](https://discord.gg/f4sTew)
+
 # Docker container for [Wallet713](https://github.com/vault713/wallet713). ![Grin logo](https://ipfs.io/ipfs/QmdboUjYec5DW2bveXQasCm6Y19KjkZorULkTXo8ogfkU3)
 
 ![vs-w713](https://ipfs.io/ipfs/QmSchK6LTdTYgKqZ26DU7XcSBDiDrtquvikbRUQXitygJf)
