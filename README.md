@@ -71,11 +71,11 @@ Download vs-w713 GitHub repository:
 
 ## Run the Container (Opens Wallet713)
 
- * Run the container and open Wallet713:
-   * `docker run --rm --name wallet713 -ti -v $PWD/data:/root/.wallet713 my/wallet713 wallet713`
+* Run the container and open Wallet713:
+  * `docker run --rm --name wallet713 -ti -v $PWD/data:/root/.wallet713 my/wallet713 wallet713`
    
 * Make a new wallet:
- * `init`
+  * `init`
 
 * Write down your recovery phrase and stash it somewhere safe.
 
