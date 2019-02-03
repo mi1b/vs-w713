@@ -34,15 +34,15 @@ In the following sections; text in `command boxes` should be  pasted into PowerS
 Download vs-w713 GitHub repository:
 
 * PowerShell defaults to TLS 1.0 (cryptographically weak) - GitHub requires TLS 1.2:
- * `[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12 `
+  * `[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12 `
 
 
 * Pull repository:
- * `Invoke-WebRequest -Uri "https://github.com/mi1b/vs-w713/archive/master.zip" -OutFile "\vs-w713.zip"`
+  * `Invoke-WebRequest -Uri "https://github.com/mi1b/vs-w713/archive/master.zip" -OutFile "\vs-w713.zip"`
 
 
 * Extract repository:
- * `Expand-Archive -LiteralPath \vs-w713.zip -DestinationPath \`
+  * `Expand-Archive -LiteralPath \vs-w713.zip -DestinationPath \`
 
 ## Setup Docker Desktop
 * Sign up for a [Docker Hub](https://hub.docker.com/signup) account.
@@ -56,27 +56,27 @@ Download vs-w713 GitHub repository:
 
 
 * Check you're connected to Docker:
- * `docker version`
+  * `docker version`
 
 
 * Check Docker can pull and run images:
- * `docker run hello-world`
+  * `docker run hello-world`
 
 ## Build the Container
 
 * Navigate to work directory:
- * `cd \vs-w713-master\vs-w713`
+  * `cd \vs-w713-master\vs-w713`
 
 
  * Build container images from Dockerfile context:
-  * `docker build -t my/wallet713 .`
+   * `docker build -t my/wallet713 .`
 
 >*Building the container images will take around 10 minutes on a fast PC. When the container is successfully built, you will recieve a SECURITY WARNING. Windows is a bit of a nanny. Its filesytem can't mark a file as executable. As we're building a Linux container in a Windows client, all files are marked executable by default (don't worry, just do it).*
 
 ## Run the Container (Opens Wallet713)
 
  * Run the container and open Wallet713:
-  * `docker run --rm --name wallet713 -ti -v $PWD/data:/root/.wallet713 my/wallet713 wallet713`
+   * `docker run --rm --name wallet713 -ti -v $PWD/data:/root/.wallet713 my/wallet713 wallet713`
 
 
 * Make a new wallet:
@@ -87,19 +87,19 @@ Download vs-w713 GitHub repository:
 
 
 * Lists available Wallet713 commands:
- * `-h`
+  * `-h`
 
 
  * Close Wallet713 and the container:
-  * `exit`
+   * `exit`
   
 
 * If anything weird happens (not saying it will) you can remove the container:
- * `docker rm -f wallet713`
+  * `docker rm -f wallet713`
 
 
 * To start Wallet713 again, just run the container:
- * `docker run --rm --name wallet713 -ti -v $PWD/data:/root/.wallet713 my/wallet713 wallet713`
+  * `docker run --rm --name wallet713 -ti -v $PWD/data:/root/.wallet713 my/wallet713 wallet713`
 
 
 > *Whatever happens to the container doesn't matter. You can delete the container, all the images, and uninstall Docker. Your Wallet713 data remains in the **\vs-w713-master\vs-w713\data** folder. Grin is always safe, or as safe as it can be on the Windows filesystem.*
