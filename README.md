@@ -54,6 +54,8 @@ Download vs-w713 GitHub repository:
 
 * As Docker needs to mount files, it requires access to the Windows filesystem. Docker will ask for credentials; use your normal Windows password.
 
+* Run Windows PowerShell (Admin)
+
 * Check you're connected to Docker:
   * `docker version`
   
@@ -68,7 +70,7 @@ Download vs-w713 GitHub repository:
  * Build container images from Dockerfile context:
    * `docker build -t my/wallet713 .`
 
->*Building the container images will take around 10 minutes on a fast PC. When the container is successfully built, you will receive a SECURITY WARNING. Windows is a bit of a nanny. Its filesystem can't mark a file as executable. As we're building a Linux container in a Windows client, all files are marked executable by default (don't worry, just do it).*
+>*Building the container images will take 10-15 minutes on a fast PC. When the container is successfully built, you will receive a SECURITY WARNING. Windows is a bit of a nanny. Its filesystem can't mark a file as executable. As you're building a Linux container in a Windows client, all files are marked executable by default (don't worry, just do it).*
 
 ## Run the Container (Opens Wallet713)
 
@@ -89,10 +91,11 @@ Download vs-w713 GitHub repository:
 * If anything weird happens (not saying it will) you can remove the container:
   * `docker rm -f wallet713`
   
-* To start Wallet713 again, just run the container:
+* To start Wallet713 again, navigate to the work directory and run the container:
+  * `cd \vs-w713-master\vs-w713`
   * `docker run --rm --name wallet713 -ti -v $PWD/data:/root/.wallet713 my/wallet713 wallet713`
   
-> *Whatever happens to the container doesn't matter. You can delete the container, all the images, and uninstall Docker. Your Wallet713 data remains in the **\vs-w713-master\vs-w713\data** folder. Grin is always safe, or as safe as it can be on the Windows filesystem.*
+> *Whatever happens to the container doesn't matter. You can delete the container, all the images, and uninstall Docker. Your Wallet713 data remains in the **\vs-w713-master\vs-w713\data** folder and is safe.*
 
 
 ## Things You Should Know
