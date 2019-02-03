@@ -67,7 +67,7 @@ Download vs-w713 GitHub repository:
  * Build container images from Dockerfile context:
    * `docker build -t my/wallet713 .`
 
->*Building the container images will take around 10 minutes on a fast PC. When the container is successfully built, you will recieve a SECURITY WARNING. Windows is a bit of a nanny. Its filesytem can't mark a file as executable. As we're building a Linux container in a Windows client, all files are marked executable by default (don't worry, just do it).*
+>*Building the container images will take around 10 minutes on a fast PC. When the container is successfully built, you will receive a SECURITY WARNING. Windows is a bit of a nanny. Its filesystem can't mark a file as executable. As we're building a Linux container in a Windows client, all files are marked executable by default (don't worry, just do it).*
 
 ## Run the Container (Opens Wallet713)
 
@@ -100,7 +100,7 @@ Types of data Microsoft gleans via Windows 10:
 * Name and contact
 * Credentials
 * Demographic
-* Interests & favorites
+* Interests & favourites
 * Payment
 * Usage
 * Contacts & relationships
