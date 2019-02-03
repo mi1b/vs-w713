@@ -1,9 +1,7 @@
 
-[![Join the chat at https://gitter.im/vault713/wallet713](https://badges.gitter.im/vault713/wallet713.svg)](https://gitter.im/vault713/wallet713?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+![Grin logo](https://ipfs.io/ipfs/QmdboUjYec5DW2bveXQasCm6Y19KjkZorULkTXo8ogfkU3) [![Join the chat at https://gitter.im/vault713/wallet713](https://badges.gitter.im/vault713/wallet713.svg)](https://gitter.im/vault713/wallet713?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-# **Win10 + vs-w713 =** ![Grin logo](https://ipfs.io/ipfs/QmdboUjYec5DW2bveXQasCm6Y19KjkZorULkTXo8ogfkU3)
-
-### vs-w713 is a Debian Stretch container for [Wallet713](https://github.com/vault713/wallet713); a popular fork of the official [Grin](https://github.com/mimblewimble/grin) wallet.
+# Docker container for [Wallet713](https://github.com/vault713/wallet713).
 ![vs-w713](https://ipfs.io/ipfs/QmSchK6LTdTYgKqZ26DU7XcSBDiDrtquvikbRUQXitygJf)
 
 ### vs-w713 runs on [Docker Desktop](https://www.docker.com/products/docker-desktop) for Windows or Mac.
