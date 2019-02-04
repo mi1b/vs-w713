@@ -1,7 +1,7 @@
 
 [![Join the chat at https://gitter.im/vault713/wallet713](https://badges.gitter.im/vault713/wallet713.svg)](https://gitter.im/vault713/wallet713?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-[![Discord logo](https://ipfs.io/ipfs/QmZNTmD3CXywobXZdk12o72PKhDKk7NfktNXwNKbmWGCUZ)](https://discord.gg/f4sTew)
+[![Discord logo](https://ipfs.io/ipfs/Qme2sRPgQBjKuZ57vAP1uepfuKjdBsSUpjXwrR8LNVhzm5)](https://discord.gg/eE5Mcwg)
 
 # [Wallet713](https://github.com/vault713/wallet713) on Windows 10. ![Grin logo](https://ipfs.io/ipfs/QmdboUjYec5DW2bveXQasCm6Y19KjkZorULkTXo8ogfkU3)
 
