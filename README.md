@@ -3,11 +3,13 @@
 
 [![Discord logo](https://ipfs.io/ipfs/Qme2sRPgQBjKuZ57vAP1uepfuKjdBsSUpjXwrR8LNVhzm5)](https://discord.gg/f4sTew)
 
-# Docker container for [Wallet713](https://github.com/vault713/wallet713). ![Grin logo](https://ipfs.io/ipfs/QmdboUjYec5DW2bveXQasCm6Y19KjkZorULkTXo8ogfkU3)
+# [Wallet713](https://github.com/vault713/wallet713) on Windows 10. ![Grin logo](https://ipfs.io/ipfs/QmdboUjYec5DW2bveXQasCm6Y19KjkZorULkTXo8ogfkU3)
 
 ![vs-w713](https://ipfs.io/ipfs/QmSchK6LTdTYgKqZ26DU7XcSBDiDrtquvikbRUQXitygJf)
 
-### vs-w713 runs on [Docker Desktop](https://www.docker.com/products/docker-desktop) for Windows or Mac.
+### Runs on [Docker Desktop](https://www.docker.com/products/docker-desktop) for Windows or Mac.
+
+Credits: [@grigio](https://github.com/grigio) [@hashmap](https://github.com/hashmap) [@ignopeverell](https://github.com/ignopeverell) [@kim0](https://github.com/kim0) [@quentinlesceller](https://github.com/quentinlesceller) [@ravidio](https://github.com/ravidio)
 
 ## Windows 10 Setup
 Hyper-V is a requirement for Docker Desktop. Hyper-V requires:
@@ -48,7 +50,7 @@ Download vs-w713 GitHub repository:
 * Sign up for a [Docker Hub](https://hub.docker.com/signup) account.
 * Download and install [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows).
 
->*Docker starts automatically.  Docker is running when you see this icon ![whale](https://ipfs.io/ipfs/Qmd3RCnf58MoTH1uVbqehXg9keVZgBZMvA9vVpaN76hBKv) in the notification area.*
+>*During installation choose Linux containers. Docker will start automatically and is running when this icon ![whale](https://ipfs.io/ipfs/Qmd3RCnf58MoTH1uVbqehXg9keVZgBZMvA9vVpaN76hBKv) appears in the notification area.*
 
 * Right click on the whale icon > Settings > Shared Drives > Tick C (or whichever drive letter you installed Windows on).
 
@@ -70,7 +72,7 @@ Download vs-w713 GitHub repository:
  * Build container images from Dockerfile context:
    * `docker build -t my/wallet713 .`
 
->*Building the container images will take 10-15 minutes on a fast PC. When the container is successfully built, you will receive a SECURITY WARNING. Windows is a bit of a nanny. Its filesystem can't mark a file as executable. As you're building a Linux container in a Windows client, all files are marked executable by default (don't worry, just do it).*
+>*Building the container images will take around 10 minutes on a fast PC. When the container is successfully built, you will receive a SECURITY WARNING. Windows' filesystem can't mark a file as executable. As you're building a Linux container in a Windows client, all files are marked executable by default (don't worry, just do it).*
 
 ## Run the Container (Opens Wallet713)
 
