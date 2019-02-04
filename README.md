@@ -1,7 +1,7 @@
 
 [![Join the chat at https://gitter.im/vault713/wallet713](https://badges.gitter.im/vault713/wallet713.svg)](https://gitter.im/vault713/wallet713?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-[![Discord logo](https://ipfs.io/ipfs/Qme2sRPgQBjKuZ57vAP1uepfuKjdBsSUpjXwrR8LNVhzm5)](https://discord.gg/f4sTew)
+[![Discord logo](https://ipfs.io/ipfs/QmZNTmD3CXywobXZdk12o72PKhDKk7NfktNXwNKbmWGCUZ)](https://discord.gg/f4sTew)
 
 # [Wallet713](https://github.com/vault713/wallet713) on Windows 10. ![Grin logo](https://ipfs.io/ipfs/QmdboUjYec5DW2bveXQasCm6Y19KjkZorULkTXo8ogfkU3)
 
@@ -72,7 +72,7 @@ Download vs-w713 GitHub repository:
  * Build container images from Dockerfile context:
    * `docker build -t my/wallet713 .`
 
->*Building the container images will take around 10 minutes on a fast PC. When the container is successfully built, you will receive a SECURITY WARNING. Windows' filesystem can't mark a file as executable. As you're building a Linux container in a Windows client, all files are marked executable by default (don't worry, just do it).*
+>*Building the container images will take 10-15 minutes on a fast PC. When the container is successfully built, you'll receive a SECURITY WARNING. Windows' filesystem can't mark a file as executable. As you're building a Linux container in a Windows client, all files are marked executable by default (don't worry, just do it).*
 
 ## Run the Container (Opens Wallet713)
 
