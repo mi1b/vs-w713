@@ -1,11 +1,6 @@
-# ignore .git and .cache directories
-.git
-.cache
-# ignore all *.class  and *.exe files in all directories
+**/*.git
+**/*.cache
 **/*.class
 **/*.exe
-# ignore markdown files except README.md
-*.md
-!README.md
-
+**/*.md
 
