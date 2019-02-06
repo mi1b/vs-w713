@@ -1,4 +1,4 @@
-# Multi-stage Dockerfile, requires docker 17.05 or later.
+# Multi-stage Dockerfile, requires Docker Desktop for Windows or Mac.
 FROM rust:1.31 as builder
 
 RUN set -ex \
