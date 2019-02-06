@@ -1,4 +1,4 @@
-
+# Multi-stage Dockerfile, requires docker 17.05 or later.
 FROM rust:1.31 as builder
 
 RUN set -ex \
@@ -34,5 +34,7 @@ RUN sed -i -e 's/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen \
 ENV LANG en_US.UTF-8
 
 COPY --from=builder /usr/src/wallet713/target/release/wallet713 /usr/local/bin/wallet713
+
+EXPOSE 3414 3415 3420 13415 13420
 
 WORKDIR /
